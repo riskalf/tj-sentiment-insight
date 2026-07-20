@@ -1,0 +1,220 @@
+/* Stylesheet aplikasi */
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400&display=swap");
+
+:root {
+  --tj-primary: #0f4c81;
+  --tj-primary-light: #eaf2f8;
+  --tj-accent: #f0a202;
+  --tj-accent-text: #412402;
+  --tj-positif: #15803d;
+  --tj-positif-bg: #ecfdf5;
+  --tj-negatif: #b91c1c;
+  --tj-negatif-bg: #fef2f2;
+  --tj-bg: #f8fafc;
+  --tj-card: #ffffff;
+  --tj-border: #e2e8f0;
+  --tj-text: #0f172a;
+  --tj-text-body: #475569;
+  --tj-text-muted: #94a3b8;
+}
+
+/* Tampilan utama */
+.stApp {
+  background-color: var(--tj-bg);
+}
+.stApp {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--tj-text-body);
+}
+
+.stApp p,
+.stApp label,
+.stApp li {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--tj-text-body);
+}
+
+/* Span */
+.stApp span:not([data-testid="stIconMaterial"]) {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--tj-text-body);
+}
+.stApp h1,
+.stApp h2,
+.stApp h3 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--tj-text);
+  font-weight: 700;
+}
+
+/* Lebar konten */
+.block-container {
+  max-width: 1250px;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+  background-color: var(--tj-card);
+  border-right: 1px solid var(--tj-border);
+}
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] li,
+section[data-testid="stSidebar"] span:not([data-testid="stIconMaterial"]) {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Tombol */
+button[data-testid="stBaseButton-primary"] {
+  background-color: var(--tj-primary);
+  color: white;
+  border: none;
+}
+
+button[data-testid="stBaseButton-primary"]:hover {
+  opacity: 0.9;
+}
+
+button[data-testid="stBaseButton-secondary"]:hover,
+button[data-testid="stBaseButton-secondary"]:focus,
+button[data-testid="stBaseButton-secondary"]:active {
+  background: var(--tj-primary) !important;
+  border-color: var(--tj-primary) !important;
+}
+
+button[data-testid="stBaseButton-secondary"]:hover p,
+button[data-testid="stBaseButton-secondary"]:focus p,
+button[data-testid="stBaseButton-secondary"]:active p,
+button[data-testid="stBaseButton-secondary"]:hover span,
+button[data-testid="stBaseButton-secondary"]:focus span,
+button[data-testid="stBaseButton-secondary"]:active span {
+  color: #ffffff !important;
+}
+
+/* Tombol CTA di halaman beranda */
+.st-key-hero_cta button {
+  background: var(--tj-accent) !important;
+  color: var(--tj-accent-text) !important;
+  border: none !important;
+}
+
+.st-key-hero_cta button:hover {
+  background: var(--tj-primary) !important;
+  color: white !important;
+}
+
+/* Input */
+.stTextArea textarea,
+.stTextInput input {
+  border-radius: 8px;
+  border: 1px solid var(--tj-border);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.stTextArea textarea:focus,
+.stTextInput input:focus {
+  border-color: var(--tj-primary);
+  box-shadow: 0 0 0 1px var(--tj-primary);
+}
+
+/* Expander */
+.stExpander {
+  border: 1px solid var(--tj-border);
+  border-radius: 8px;
+  background-color: var(--tj-card);
+}
+
+/* Komponen tambahan */
+
+.tj-card {
+  background: var(--tj-card);
+  border: 1px solid var(--tj-border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.tj-stat-card {
+  background: var(--tj-card);
+  border: 1px solid var(--tj-border);
+  border-radius: 12px;
+  padding: 16px;
+}
+.tj-stat-label {
+  font-size: 12px;
+  color: var(--tj-text-muted);
+  margin-bottom: 6px;
+}
+.tj-stat-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--tj-primary);
+}
+
+.tj-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+.tj-badge-positif {
+  background: var(--tj-positif-bg);
+  color: var(--tj-positif);
+}
+.tj-badge-negatif {
+  background: var(--tj-negatif-bg);
+  color: var(--tj-negatif);
+}
+
+.tj-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #334155;
+  background: #f1f5f9;
+  padding: 6px 12px;
+  border-radius: 8px;
+  margin: 0 6px 6px 0;
+}
+
+.tj-progress-track {
+  height: 6px;
+  background: #f1f5f9;
+  border-radius: 3px;
+  margin: 10px 0 16px;
+  overflow: hidden;
+}
+.tj-progress-fill {
+  height: 6px;
+  border-radius: 3px;
+}
+.tj-progress-fill.positif {
+  background: var(--tj-positif);
+}
+.tj-progress-fill.negatif {
+  background: var(--tj-negatif);
+}
+
+.tj-label {
+  font-size: 12px;
+  color: var(--tj-text-muted);
+  margin-bottom: 8px;
+}
+
+.tj-mono-trace {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  color: var(--tj-text-body);
+  background: var(--tj-bg);
+  border: 1px solid var(--tj-border);
+  border-radius: 6px;
+  padding: 6px 10px;
+  display: inline-block;
+  margin: 2px 4px 2px 0;
+}
