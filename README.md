@@ -55,7 +55,7 @@ tj-sentiment-insight/
 
 Model klasifikasi sentimen menggunakan **IndoBERT** yang telah melalui proses *fine-tuning* pada data ulasan aplikasi TJ: Transjakarta.
 
-Model diunduh secara otomatis dari Hugging Face Model Hub saat aplikasi dijalankan.
+Model disimpan pada Hugging Face Model Hub dan dimuat secara otomatis oleh aplikasi saat digunakan.
 
 ---
 
