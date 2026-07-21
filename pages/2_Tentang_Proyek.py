@@ -73,10 +73,10 @@ st.html(f"""
 
 # Perbandingan model
 BARIS_METRIK = [
-    ("Accuracy", "95,10%", "97,68%"),
-    ("Precision (macro)", "90,43%", "94,78%"),
-    ("Recall (macro)", "90,98%", "96,59%"),
-    ("F1-score (macro)", "90,70%", "95,65%"),
+    ("Accuracy", "95,62%", "98,20%"),
+    ("Precision (macro)", "90,99%", "96,26%"),
+    ("Recall (macro)", "92,64%", "96,89%"),
+    ("F1-score (macro)", "91,79%", "96,57%"),
 ]
 
 baris_html = "".join(
