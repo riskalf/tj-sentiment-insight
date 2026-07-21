@@ -16,11 +16,11 @@ load_css()
 
 # Data ringkasan
 STATS = {
-    "akurasi": "97,68%",
-    "f1_macro": "95,65%",
-    "jumlah_ulasan": "1.940",
+    "akurasi": "98,20%",
+    "f1_macro": "96,57%",
+    "jumlah_ulasan": "1.938",
     "tema_terbanyak": "Bug & Update Sistem",
-    "tema_terbanyak_persen": "30,20% ulasan negatif",
+    "tema_terbanyak_persen": "31,56% ulasan negatif",
 }
 
 # Hero
