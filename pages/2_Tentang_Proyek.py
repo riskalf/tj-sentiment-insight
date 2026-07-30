@@ -20,7 +20,7 @@ load_css()
 # Konstanta warna dan konfigurasi visual dashboard
 C_PRIMARY = "#0f4c81"
 C_ACCENT = "#f0a202"
-C_POSITIF = "#8ceaed"
+C_POSITIF = "#3672b3"
 C_NEGATIF = "#b91c1c"
 C_TEXT = "#0f172a"
 C_TEXT_BODY = "#475569"
