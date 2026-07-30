@@ -20,7 +20,7 @@ load_css()
 # Konstanta warna dan konfigurasi visual dashboard
 C_PRIMARY = "#0f4c81"
 C_ACCENT = "#f0a202"
-C_POSITIF = "#15803d"
+C_POSITIF = "#8ceaed"
 C_NEGATIF = "#b91c1c"
 C_TEXT = "#0f172a"
 C_TEXT_BODY = "#475569"
@@ -229,7 +229,7 @@ langkah_html = "".join(
 
 st.html(f"""
 <div style="font-size:15px; font-weight:700; color:var(--tj-text); margin:24px 0 16px">
-    Metodologi Penelitian (CRISP-DM)
+    Tahapan Penelitian (CRISP-DM)
 </div>
 {langkah_html}
 """)
